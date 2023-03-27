@@ -10,8 +10,13 @@
 </head>
 
 <body>
+    <div class="auth-todo">
+        <input class="auth-todo__text" type="text" placeholder="Enter your name">
+        <button type="submit">Enter</button>
+    </div>
+
     <form class="form" action="">
-        <input required class="note-input-text" type="text" placeholder="Note-text">
+        <input name="noteText" required class="note-input-text" type="text" placeholder="Note-text">
         <select class="note-input-priority" name="priority">
             <option value="1">1</option>
             <option value="2">2</option>
@@ -24,7 +29,7 @@
     <ul class="note-list">
     </ul>
 
-    <script src="./index.js"></script>
+    <script type="module" src="./index.js"></script>
 </body>
 
 </html>
