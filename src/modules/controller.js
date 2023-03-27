@@ -16,8 +16,7 @@ class Controller {
 
     async handleLogin(name, email) {
         await this.model.login(name, email);
-        await this.handleModelChange();
-        location.reload();
+        await location.reload();
     }
 
     async handleAddNote() {
